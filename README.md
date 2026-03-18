@@ -33,4 +33,8 @@
 
 ## Запуск
 
+Відкрийте [посилання](https://htmlpreview.github.io/?https://github.com/litecoding/lab1/blob/master/index.html) на htmlpreview.github.io
+
+або
+
 Відкрийте файл `index.html` у браузері.
