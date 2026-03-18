@@ -3,69 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реєстрація користувача</title>
+    <title>Ключова Майстерня — Головна</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Реєстрація</h1>
-            <p class="subtitle">Створіть обліковий запис</p>
-        </header>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Ключова Майстерня</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Головна</a>
+                <a href="services.html" class="nav-link">Послуги</a>
+                <a href="about.html" class="nav-link">Про нас</a>
+                <a href="contacts.html" class="nav-link">Контакти</a>
+                <a href="registration.html" class="nav-link nav-link-cta">Реєстрація</a>
+            </nav>
+        </div>
+    </header>
 
-        <form id="registrationForm" class="registration-form" novalidate>
-            <div class="form-group">
-                <label for="firstName">Ім'я</label>
-                <input 
-                    type="text" 
-                    id="firstName" 
-                    name="firstName" 
-                    placeholder="Введіть ваше ім'я"
-                    autocomplete="given-name"
-                >
-                <span class="error-message" id="firstNameError"></span>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Професійне виготовлення ключів</h1>
+                <p class="hero-subtitle">Швидко, якісно, надійно. Більше 15 років на ринку послуг.</p>
+                <a href="services.html" class="btn btn-primary">Наші послуги</a>
             </div>
+        </section>
 
-            <div class="form-group">
-                <label for="lastName">Прізвище</label>
-                <input 
-                    type="text" 
-                    id="lastName" 
-                    name="lastName" 
-                    placeholder="Введіть ваше прізвище"
-                    autocomplete="family-name"
-                >
-                <span class="error-message" id="lastNameError"></span>
+        <section class="features">
+            <div class="container">
+                <h2>Чому обирають нас</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">⏱</span>
+                        <h3>Швидко</h3>
+                        <p>Виготовлення ключа за 15–30 хвилин</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">✓</span>
+                        <h3>Якісно</h3>
+                        <p>Використовуємо лише перевірене обладнання</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">💰</span>
+                        <h3>Доступно</h3>
+                        <p>Чесні ціни без прихованих платежів</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-                <label for="email">Електронна пошта</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="example@mail.com"
-                    autocomplete="email"
-                >
-                <span class="error-message" id="emailError"></span>
+        <section class="cta-section">
+            <div class="container">
+                <h2>Потрібен ключ? Зареєструйтесь!</h2>
+                <p>Створіть обліковий запис, щоб отримати знижку на перше замовлення</p>
+                <a href="registration.html" class="btn btn-secondary">Зареєструватися</a>
             </div>
+        </section>
+    </main>
 
-            <div class="form-group">
-                <label for="password">Пароль</label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    placeholder="Введіть пароль"
-                    autocomplete="new-password"
-                >
-                <span class="error-message" id="passwordError"></span>
-            </div>
-
-            <button type="submit" class="submit-btn">Відправити</button>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Ключова Майстерня. Усі права захищені.</p>
+        </div>
+    </footer>
 </body>
 </html>

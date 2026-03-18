@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація — Ключова Майстерня</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Ключова Майстерня</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Головна</a>
+                <a href="services.html" class="nav-link">Послуги</a>
+                <a href="about.html" class="nav-link">Про нас</a>
+                <a href="contacts.html" class="nav-link">Контакти</a>
+                <a href="registration.html" class="nav-link nav-link-cta active">Реєстрація</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="registration-page">
+        <div class="container container-narrow">
+            <header class="form-header">
+                <h1>Реєстрація</h1>
+                <p class="subtitle">Створіть обліковий запис</p>
+            </header>
+
+            <form id="registrationForm" class="registration-form" novalidate>
+                <div class="form-group">
+                    <label for="firstName">Ім'я</label>
+                    <input 
+                        type="text" 
+                        id="firstName" 
+                        name="firstName" 
+                        placeholder="Введіть ваше ім'я"
+                        autocomplete="given-name"
+                    >
+                    <span class="error-message" id="firstNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Прізвище</label>
+                    <input 
+                        type="text" 
+                        id="lastName" 
+                        name="lastName" 
+                        placeholder="Введіть ваше прізвище"
+                        autocomplete="family-name"
+                    >
+                    <span class="error-message" id="lastNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="example@mail.com"
+                        autocomplete="email"
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Введіть пароль"
+                        autocomplete="new-password"
+                    >
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Ключова Майстерня. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
