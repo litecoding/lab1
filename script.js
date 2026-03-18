@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('registrationForm');
+    if (!form) return;
     const fields = {
         firstName: document.getElementById('firstName'),
         lastName: document.getElementById('lastName'),
